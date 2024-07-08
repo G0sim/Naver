@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="s3Slider.js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/Downloads/script/s3Slider.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Downloads/script/s3Slider.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

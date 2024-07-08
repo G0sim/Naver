@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naver</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script src="https://kit.fontawesome.com/57cb1f2fe8.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script/jquery-1.6.1.min.js"></script>
+  <script type="text/javascript" src="script/s3Slider.js"></script>
+</head>
+<body>
+<div id="root">
+  <!-- 사이트 상단부분 시작 -->
+  <header>
+    <div class="top">
+      <div>
+        <button class="more_btn"><i class="fa-solid fa-ellipsis"></i></button>
+        <button class="pay_btn"><i class="fa-brands fa-cc-paypal"></i></button>
+      </div>
+      <div>
+        <button class="talk_btn"><i class="fa-regular fa-comment-dots"></i></button>
+        <button class="bell_btn"><i class="fa-regular fa-bell"></i></button>
+        <button class="cart_btn"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
+    <!-- 검색 -->
+    <div class="search_area">
+      <fieldset class="search_area1">
+        <div class="search_logo_area">
+          <img class="search_logo" src="images/icon/naver_logo.svg">
+        </div>
+        <form class="search_area3" action="https://search.naver.com/search.naver" method="get">
+          <div>
+            <input class="search_bar" type="search" placeholder="검색어를 입력해주세요."
+                   maxlength="255" name="query"/>
+          </div>
+          <div>
+            <button class="search_btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+    <!-- 바로가기 기능들 -->
+    <div class="short_cut">
+      <ul>
+        <li class="short_cut_items"><a href="#">
+          <button class="short_mail"><i class="fa-solid fa-envelope"></i></button>
+          <span>메일</span></a></li>
+        <li class="short_cut_items"><a href="https://section.cafe.naver.com/ca-fe/home" target="_blank">
+          <button class="short_cafe"><i class="fa-solid fa-mug-hot"></i></button>
+          <span>카페</span></a></li>
+        <li class="short_cut_items"><a href="https://section.blog.naver.com/BlogHome.naver" target="_blank">
+          <button class="short_blog"><i class="fa-solid fa-b"></i></button>
+          <span>블로그</span></a></li>
+        <li class="short_cut_items"><a href="https://shopping.naver.com/home" target="_blank">
+          <button class="short_shop"><i class="fa-solid fa-basket-shopping"></i></button>
+          <span>쇼핑</span></a></li>
+        <li class="short_cut_items"><a href="https://news.naver.com/" target="_blank">
+          <button class="short_news"><i class="fa-solid fa-newspaper"></i></button>
+          <span>뉴스</span></a></li>
+        <li class="short_cut_items"><a href="https://finance.naver.com/" target="_blank">
+          <button class="short_stock"><i class="fa-solid fa-chart-line"></i></button>
+          <span>증권</span></a></li>
+        <li class="short_cut_items"><a href="https://land.naver.com/" target="_blank">
+          <button class="short_property"><i class="fa-solid fa-house-chimney-window"></i></button>
+          <span>부동산</span></a></li>
+        <li class="short_cut_items"><a href="https://map.naver.com/" target="_blank">
+          <button class="short_map"><i class="fa-solid fa-map-location-dot"></i></button>
+          <span>지도</span></a></li>
+        <li class="short_cut_items"><a href="https://comic.naver.com/index" target="_blank">
+          <button class="short_toon"><i class="fa-solid fa-w"></i></button>
+          <span>웹툰</span></a></li>
+        <li class="short_cut_items"><a href="https://chzzk.naver.com/" target="_blank">
+          <button class="short_chiz"><p class="chiz_logo"><i class="fa-solid fa-bolt-lightning"></i></p></button>
+          <span>치지직</span></a></li>
+        <li class="short_cut_items">
+          <button class="short_etc"><i class="fa-solid fa-ellipsis"></i></button>
+        </li>
+        <!-- 바로 가기 부분에 있는 작은 광고-->
+        <li class="divide_line"></li>
+        <li><img src="images/ad_banner/shrotcut_min_ad.jpg" class="small_ad">
+          <span class="small_ad_mark">ad</span></li>
+      </ul>
+      <!--        <div style="position: absolute; top: 10px;">-->
+      <!--          <img class="middle_ad" src="images/cat_.jpg" />-->
+      <!--        </div>-->
+    </div>
+  </header>
+  <!-- 몸통부분 시작 -->
+  <div class="root">
+    <div class="main_content">
+      <!-- 중간 커다란 광고-->
+      <section>
+        <img class="banner_ad" src="images/ad_banner/main_ad_banner.jpg"/>
+      </section>
+      <!-- 뉴스(고양이) -->
+      <section>
+        <div>
+          <ul id="news_menu">
+            <li>뉴스스탠드</li>
+            <li class="deco">언론사편집</li>
+            /
+            <li>엔터</li>
+            /
+            <li>스포츠</li>
+            /
+            <li>경제</li>
+            /
+            <li>쇼핑투데이</li>
+          </ul>
+        </div>
+        <div class="news_header_view">
+          <div class="position_1">
+            <div class="divide_line_2">분야별 뉴스&nbsp;<i class="fa-solid fa-caret-down"></i></div>
+            <div class="position_1">
+              <div class="position_8"> 한경신문 <span class="deco_2"><i class="fa-solid fa-circle"></i></span></div>
+              <div><span class="deco_3">충격</span> 고양이 너무 귀여움</div>
+            </div>
+          </div>
+          <div><a href="https://news.naver.com/" target="_blank">뉴스홈</a></div>
+        </div>
+        <!-- 고양이 상세설명 -->
+        <div class="position_2" id="effect">
+          <div class="position_3">
+            <li>
+              <a class="position_1" href="https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EA%B3%A0%EC%96%91%EC%9D%B4"
+                 target="_blank">
+                <div>
+                  <img class="news_image" src="images/news_img/korean_cat.png"/>
+                </div>
+                <div>
+                  <p class="news_title">한국고양이</p>
+                  <p class="news_content">한국고양이는 한국에서 살아가고 있는 도메스틱 쇼트헤어를 지칭하는 표현중 하나이며 한국의 야생에서 살아가는 고양이를 의미한다. 코리안
+                    쇼트헤어라고도 불린다.</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="position_1" href="https://terms.naver.com/entry.naver?docId=5687140&cid=70092&categoryId=59598"
+                 target="_blank">
+                <div><img class="news_image" src="images/news_img/bengal.jpg"/></div>
+                <div>
+                  <p class="news_title">뱅갈</p>
+                  <p class="news_content">벵갈은 이집션 마우와 삵의 교배종인 고양이이다. 품종명은 삵의 분류학적 이름에서 유래했다. 벵갈은 야생적인 특성이 강하며, 황금빛 빛깔은 삵
+                    조상에서 비롯되며, 털은 반점과 장미꽃무늬, 화살촉 무늬 또는 마블링과 같은 무늬가 나타난다.</p>
+                </div>
+              </a>
+            </li>
+          </div>
+          <div class="position_3">
+            <li>
+              <a class="position_1" href="https://terms.naver.com/entry.naver?docId=1320195&cid=40942&categoryId=32624"
+                 target="_blank">
+                <div>
+                  <img class="news_image" src="images/news_img/ragdoll.jpg"/>
+                </div>
+                <div>
+                  <p class="news_title">랙돌</p>
+                  <p class="news_content">랙돌은 미국이 원산지인 고양이 품종으로, 조상은 도메스틱 화이트 롱헤어와 버먼이다. </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="position_1"
+                 href="https://ko.wikipedia.org/wiki/%EB%B4%84%EB%B2%A0%EC%9D%B4_(%EA%B3%A0%EC%96%91%EC%9D%B4)"
+                 target="_blank">
+                <div><img class="news_image" src="images/news_img/bombei.jpg"/></div>
+                <div>
+                  <p class="news_title">봄베이</p>
+                  <p class="news_content">봄베이는 아메리칸 고양이 중 검은 고양이의 한 품종이다. 유럽에서 가장 흔히 기르는 고양이 중 하나이다. 흑표범을 닮은 집고양이를 만들
+                    목적으로 1958년 미국 켄터키 루이빌에서 니키 호너가 버미즈와 아메리칸쇼트헤어를 교배시켜 만든 종이다.</p>
+                </div>
+              </a>
+            </li>
+          </div>
+        </div>
+        <div class="news_etc">
+          <button class="news_etc_button"> <</button>
+          <div class="news_etc_position">
+            <span class="font_deco_7">고양이</span>&nbsp;더보기
+          </div>
+          <button class="news_etc_button"> ></button>
+        </div>
+      </section>
+      <!-- 쇼핑(고양이 용품) -->
+      <section>
+        <div class="commerce_box">
+          <div class="commerce_header">
+            <div>
+              <ul id="commerce_menu">
+                <li>쇼핑</li>
+                /
+                <li>맨즈</li>
+                /
+                <li>원쁠딜</li>
+                /
+                <li>쇼핑라이브</li>
+              </ul>
+            </div>
+            <div>
+              <strong>
+                1/13
+              </strong>
+              <span>
+                    <button class="commerce_btnL">
+                      <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="commerce_btnR">
+                      <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                  </span>
+            </div>
+          </div>
+          <div class="position_1">
+            <div class="position_9">
+              <!-- 쇼핑몰 리스트 -->
+              <div class="shop_list">
+                <div>
+                  <a
+                    href="https://www.coupang.com/?src=1139997&spec=10799999&addtag=900&ctag=HOME&lptag=AF_NAVER&itime=20240704100743&pageType=HOME&pageValue=HOME&wPcid=17199987103780529329648&wRef=&wTime=20240704100743&redirect=landing&traceid=V0-181-0000000000000000&subid=mallname&mcid=74064d498ed945deac4f4f0a39804f18"
+                    target="_blank">쿠팡</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://www.gmarket.co.kr/?jaehuid=200003819&NaPm=ct%3Dly6kj3n4%7Cci%3D25019210d684df568ffdba130ed8d1f95ccebafa%7Ctr%3Dsbml%7Csn%3D24%7Cic%3D%7Chk%3D2a43d636e1eb0dd23b715422e51dcb38babf7881"
+                    target="_blank">G마켓</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://www.auction.co.kr/?BCODE=BN00076752&gate_id=43f606db-cb15-49a3-a52f-ae5eeabb473f&ck=&sn=&igaw_eng=&airbridge_referrer=&appgate_guid="
+                    target="_blank">옥션</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://www.ssg.com/?ckwhere=ssg_txt&NaPm=ct%3Dly6kjza0%7Cci%3D6a04fb7b1b0b831c67cfd6c9d7a2a71578cfe024%7Ctr%3Dsbml%7Csn%3D218835%7Cic%3D%7Chk%3D72563442a5f2f5748e183f0c4757c9b9b0f5b64b"
+                    target="_blank"><strong>SSG닷컴</strong></a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.11st.co.kr/main?code=1380&NaPm=ct=ly6kkce8|ci=fdcb36a99f05bce6dbbd5455a1f639aadda52b5b|tr=sbml|sn=17703|ic=|hk=32349ccb20bf78e936650d504250c9fc20622cbd&utm_term=&utm_campaign=%C5%D7%B8%B6%BC%EE%C7%CE-%B0%ED%C1%A4-2%C5%C7-%B8%F4%B8%ED%C5%D8%BD%BA%C6%AE-main&utm_source=%B3%D7%C0%CC%B9%F6_PC_P&utm_medium=%C6%F7%C5%D0+%C1%A6%C8%DE"
+                    target="_blank">11번가</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0&chlNo=1&chlDtlNo=53&_CAD=nmall153&utm_source=naver&utm_medium=shopping_box&utm_campaign=onpro_emnet_main_0101_1231&utm_content=pc&NaPm=ct=ly6kkqa8|ci=5fd8bb797f82eebfa637ed7acbdca4ffc6512485|tr=sbml|sn=197658|ic=|hk=3b9960f81d0634358405e70c37c1c29a415c8f87"
+                    target="_blank">올리브영</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://front.wemakeprice.com/main?utm_source=naver_mall&utm_medium=mall_name_naver&utm_campaign=naver_logo&NaPm=ct%3Dly6kle7c%7Cci%3D004618cd7b24f99933afef2762a13d712b40d23b%7Ctr%3Dsbml%7Csn%3D197023%7Cic%3D%7Chk%3D2e1c98f410094b0d0402c10f2ff3791144af7242"
+                    target="_blank">위메프</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://www.halfclub.com/#!/main?_n_m2=h_naver_mall&gSeq=1175486697&partnerid=h_naver_mall&mt=20240704161048&NaPm=ct%3Dly6klps0%7Cci%3D702db02054cf526e9b2986ee8b80f2d6fcabc668%7Ctr%3Dsbml%7Csn%3D270%7Cic%3D%7Chk%3D485630235da3c2bfaa59659e9eba09fc5186fd9e"
+                    target="_blank"><strong>하프클럽</strong></a>
+                </div>
+                <div>
+                  <a
+                    href="https://with.gsshop.com/jsp/jseis_withLGeshop.jsp?media=z9&NaPm=ct%3Dly6km5zc%7Cci%3Dbcd2fe4ec74b1b7ea578cfa5ee410aa73fa36b9f%7Ctr%3Dsbml%7Csn%3D1%7Cic%3D%7Chk%3Daa5a92f07dc1c1a3feb8a2299836ef9d07fdc173"
+                    target="_blank"><strong>GS SHOP</strong></a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://display.cjonstyle.com/p/homeTab/main?hmtabMenuId=H00005&utm_content=mallname&utm_medium=pcs&utm_source=naver&NaPm=ct%3Dly6kmibs%7Cci%3De7f12a984881b9ef099128d2d310265a7c0e230a%7Ctr%3Dsbml%7Csn%3D13%7Cic%3D%7Chk%3D4331ee0d58e753cda57f3d276de8cd714ff4564e"
+                    target="_blank">CJ온스타일</a>
+                  <i class="fa-solid fa-circle"></i>
+                  <a
+                    href="https://www.fashionplus.co.kr/?affiliate=naver_mn&utm_source=naver&utm_medium=mn&NaPm=ct%3Dly6kmvg0%7Cci%3Dcb639109111e93527f99ba45eb391084022370dc%7Ctr%3Dsbml%7Csn%3D883%7Cic%3D%7Chk%3D16fe846d115827c8b4afc759de096ff48756ded5"
+                    target="_blank">패션플러스</a>
+                </div>
+              </div>
+              <!-- 쇼핑몰 기능들 바로가기 -->
+              <div class="quicklink_menu">
+                <ul>
+                  <li>
+                    <a href="https://shopping.naver.com/home" target="_blank">
+                      <div class="quicklink_menu_icon">
+                        <i class="fa-solid fa-store"></i>
+                      </div>
+                      <div>쇼핑홈</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <div class="quicklink_menu_icon">
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                      <div>리뷰적립</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <div class="quicklink_menu_icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                      </div>
+                      <div>주문</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <div class="quicklink_menu_icon">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                      </div>
+                      <div>장바구니</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <img class="quicklink_menu_ad" src="images/ad_banner/commerce_ad.jpeg"/>
+              </div>
+            </div>
+            <!-- 쇼핑몰 제품들 미리보기(고양이 용품들 미리보기) -->
+            <div class="hotItems">
+              <ul class="hotItems_preview">
+                <li>
+                  <div><img src="images/hot_items/cat_tower.png"></div>
+                  <div class="hotItems_des">고양이만의 공간을 더욱 안정적이게</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/cat_brush.jpg"></div>
+                  <div class="hotItems_des">완벽하고 심플한 반려동물 케어</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/scratcher.png"></div>
+                  <div class="hotItems_des">편하게 식빵굽고 눕는다옹</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/Chao.jpeg"></div>
+                  <div class="hotItems_des">기호성이 뛰어나 고양이가 좋아해요</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/cat_sand.jpg"></div>
+                  <div class="hotItems_des">모두가 만족할 수 있는 혁신적인 모래</div>
+                </li>
+              </ul>
+              <ul class="hotItems_preview">
+                <li>
+                  <div><img src="images/hot_items/cat_wheel.png"></div>
+                  <div class="hotItems_des">냥이가 스스로 힘을 소진(?)시키는 캣휠</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/chiken.jpg"></div>
+                  <div class="hotItems_des">캣만두의 기호성을 경험해보세요!</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/hammock.jpg"></div>
+                  <div class="hotItems_des">고양이님들을 위한 최고의 안식처</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/kasha.jpg"></div>
+                  <div class="hotItems_des">고양이가 환장하는 장난감</div>
+                </li>
+                <li>
+                  <div><img src="images/hot_items/cat_poll.jpg"></div>
+                  <div class="hotItems_des">가볍게 모던하게 편리하게</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="position_1 today_pick">
+            <p><strong>오늘의 혜택</strong></p>
+            <i class="fa-solid fa-circle"></i>
+            <p>특가 세일! <span class="font_deco_6">최대 84%</span> 할인까지!</p>
+          </div>
+          <div class="shop_etc">
+            <button class="shop_etc_button"> <</button>
+            <p class="shop_etc_position"><span class="font_deco_6">쇼핑아이템</span>&nbsp;더보기</p>
+            <button class="shop_etc_button"> ></button>
+          </div>
+        </div>
+      </section>
+      <!-- feed_box?(고양이 건강 정보) 시작 -->
+      <section>
+        <div class="feed_box">
+          <ul>
+            <li>추천·구독</li>
+            /
+            <li>자동차</li>
+            /
+            <li>웹툰</li>
+            /
+            <li>패션뷰티</li>
+            /
+            <li>레시피</li>
+            /
+            <li>리빙</li>
+            /
+            <li>책방</li>
+            /
+            <li>지식+</li>
+            /
+            <li>건강</li>
+            /
+            <li>게임</li>
+          </ul>
+        </div>
+        <div id="feed_box">
+          <!-- feed box 상단의 가장 큰 부분 세개 -->
+          <ul>
+            <li>
+              <a href="https://www.k-health.com/news/articleView.html?idxno=61068" target="_blank">
+                <img class="feed_main_img" src="images/commerce_img/commerce_img_1.jpeg">
+                <p class="font_deco_5">고양이의 숨은 병 찾는 ‘건강검진 Q&A’</p>
+                <p class="font_deco_8">헬스경향</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.royalcanin.com/kr/cats/health-and-wellbeing" target="_blank">
+                <img class="feed_main_img" src="images/commerce_img/commerce_img_2.png">
+                <p class="font_deco_5">건강한 고양이 키우기 팁</p>
+                <p class="font_deco_8">로얄캐닌</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=2FIB85XTwi8" target="_blank">
+                <div class="logo">
+                  <img class="feed_main_img" src="images/commerce_img/catube_4.jpg">
+                  <img class="youtube_main_logo" src="images/icon/youtube.png">
+                </div>
+                <p class="font_deco_5">모르는 고양이가 집에 들어왔습니다...</p>
+                <p class="font_deco_8">시루가 조아</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- feed box 하단의 작은 부분 -->
+        <div class="feed_contents">
+          <!-- 하단의 왼쪽 네개 -->
+          <div>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=HP0a4pkXM3Q" target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/catube_1.jpg">
+                    <img class="youtube_logo" src="images/icon/youtube.png">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">동물농장 ★인기 짱 고양이★ 고양이 최고야</p>
+                    <p class="font_deco_8">SBS STORY</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://post.naver.com/viewer/postView.naver?volumeNo=16952866&memberNo=704670"
+                   target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/commerce_img_3.jpg">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">뚱뚱한 고양이 괜찮을까</p>
+                    <p class="font_deco_8">VIP동물의료센터</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=VK_KxUTA5bk" target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/catube_3.jpg">
+                    <img class="youtube_logo" src="images/icon/youtube.png">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">이 정도까지 사람과 대화 가능한 고양이 보신 분?</p>
+                    <p class="font_deco_8">알달또 Ardarddo</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://blog.malcang.com/%EA%B3%A0%EC%96%91%EC%9D%B4-%EB%B3%B5%EB%A7%89%EC%97%BC-%EC%A6%9D%EC%83%81/"
+                  target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/commerce_img_4.jpg">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">'고양이의 천적' 복막염의 증상과 예방</p>
+                    <p class="font_deco_8">말캉</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 하단의 오른쪽 네개 -->
+          <div>
+            <ul>
+              <li>
+                <a href="https://m.health.chosun.com/svc/news_view.html?contid=2023071701758" target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/commerce_img_6.jpg">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">아파도 티 안 내는 고양이… 질병 ‘조기 진단’하려면?</p>
+                    <p class="font_deco_8">헬스조선</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=cDtTbN8t-K4" target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/catube_2.jpg">
+                    <img class="youtube_logo" src="images/icon/youtube.png">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">동물농장 '인싸 고양이'총출동! 사랑스러운 인싸냥 모음</p>
+                    <p class="font_deco_8">SBS STORY</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.khan.co.kr/life/health/article/201603211756102" target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/commerce_img_5.png">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">“고양이는 작은 개가 아니다”</p>
+                    <p class="font_deco_8">경향신문</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.donga.com/news//article/all/20160620/78757548/1"
+                   target="_blank">
+                  <div class="logo">
+                    <img class="feed_img" src="images/commerce_img/commerce_img_7.jpg">
+                  </div>
+                  <div>
+                    <p class="font_deco_5">고양이가 아플때 하는 25가지 행동</p>
+                    <p class="font_deco_8">동아일보</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="feed_etc">
+          <p class="feed_etc_position"><strong>펼쳐보기</strong>&nbsp;
+            <span class="font_deco_9"><i class="fa-solid fa-plus"></i></span></p>
+        </div>
+      </section>
+    </div>
+    <aside class="position_5">
+      <!-- 로그인, 회원가입, 아이디 찾기, 비밀번호 찾기 -->
+      <div class="login_box">
+        <p class="font_deco_1">네이버를 더 안전하고 편리하게 이용하세요</p>
+        <button class="login_btn"><span class="font_deco">NAVER</span>&nbsp;로그인</button>
+        <p class="font_deco_2">아이디찾기 | 비밀번호 찾기 | 회원가입</p>
+      </div>
+      <div>
+        <img class="side_ad1 side_ad_border" src="images/ad_banner/aside_big_ad.jpg"/>
+      </div>
+      <!-- 날씨 정보 -->
+      <div class="weather_box">
+        <div class="position_4 aside_title_position">
+          <div class="position_4">
+            <div class="aside_title">날씨</div>
+            <button class="weather_btn"><span class="temperature_icon"><i
+              class="fa-solid fa-temperature-half"></i></span>예보 비교
+            </button>
+          </div>
+          <div class="font_deco_2">서울시 만리동 2가</div>
+        </div>
+        <hr/>
+        <div class="position_1">
+          <div class="position_5 position_6">
+            <!-- 날씨 이미지 -->
+            <div><img src="images/aside_img/today_temp.png"></div>
+            <!-- 날씨 최저온도, 최고온도 -->
+            <div class="position_1 position_7">
+              <p class="temp_low">24°</p>
+              <p class="font_deco_3">/</p>
+              <p class="temp_high">25°</p>
+            </div>
+            <!-- 미세먼지 상태 -->
+            <ul class="position_1 temp">
+              <li>미세<span class="temp_low"> 좋음</span></li>
+              <li class="deco">초미세 <span class="temp_low">좋음</span></li>
+            </ul>
+          </div>
+          <!-- 날씨 그래프 -->
+          <div class="position_5 position_6">
+            <img src="images/aside_img/temp_graph.png">
+          </div>
+        </div>
+      </div>
+      <!-- 주식 정보 -->
+      <div class="stock_box">
+        <div class="position_4 aside_title_position">
+          <div class="aside_title">증시</div>
+          <div class="font_deco_2">07.02. 13:20
+            <button><i class="fa-solid fa-arrow-rotate-right"></i></button>
+          </div>
+        </div>
+        <hr/>
+        <div class="position_1">
+          <!-- 주식 그래프 -->
+          <div class="position_5 position_6">
+            <img src="images/aside_img/stock_graph.png">
+          </div>
+          <div class="position_5" id="stock_desc">
+            <!-- 주식 상세 정보 -->
+            <ul>
+              <li>
+                <a>
+                  <span>하이브</span>
+                  <span><span class="font_deco_10"><i class="fa-solid fa-caret-up"></i>&nbsp;2.03%</span>201,000</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span>삼성전자</span>
+                  <span><span class="font_deco_10"><i class="fa-solid fa-caret-up"></i>&nbsp;3.42%</span>84,600</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span>HLB</span>
+                  <span><span class="font_deco_10"><i class="fa-solid fa-caret-up"></i>&nbsp;6.90%</span>82,100</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://finance.naver.com/sise/lastsearch2.naver" target="_blank">
+                  <span>인기종목 더보기</span>
+                  <span> <img src="images/icon/right_arrow.png"> </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="side_ad2 side_ad_border" src="images/ad_banner/aside_mid_ad.png"/>
+      </div>
+      <!-- 여러가지 기타 기능이 있는 위젯보드 -->
+      <div class="widget_box">
+        <div class="font_deco_11">위젯보드</div>
+        <div>
+          <div class="position_1">
+            <!-- 달력 -->
+            <div class="calendar">
+              <div class="font_deco_11">캘린더</div>
+              <div>
+                <span class="font_deco_12">8.8</span><span>목</span>
+              </div>
+              <div class="font_deco_13">세계 고양이의 날<i class="fa-solid fa-cat"></i></div>
+              <div>
+                <a class="calendar_login">로그인하기</a>
+              </div>
+            </div>
+            <!-- 메모 -->
+            <div class="memo">
+              <div class="memo_title">메모
+                <hr/>
+              </div>
+              <ul>
+                <li></li>
+                <li></li>
+                <li>
+                  <a class="memo_login">
+                    로그인하기
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="position_1" style="padding-top: 5px;">
+            <!-- 파파고(번역) -->
+            <div class="papago">
+              <div><img class="papago_logo" src="images/logo/papago_logo.png"></div>
+              <div class="papago_icon_position"><img class="papago_icon" src="images/icon/papago_icon.png"></div>
+              <div class="translating">번역하기</div>
+            </div>
+            <!-- 영어사전 -->
+            <div class="eng_dictionary_position">
+              <div class="page_1">
+                <div class="page_2">
+                  <div class="page_3">
+                    <div class="font_deco_14">영어사전</div>
+                    <ul>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                    <span class="dic_contents">Kitten</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 짧은 영상들 모음-->
+        <div class="media_shorts">
+          <div class="media_title">
+            <p class="font_deco_15">고양이 숏츠 모음 <i class="fa-solid fa-paw"></i></p>
+            <p class="font_deco_16">다른 추천 더보기
+              <button class="media_btn"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+              </i></p>
+          </div>
+          <div class="media_contents">
+            <div>
+              <iframe src="https://www.youtube.com/embed/keex18P1z8o" title="한강 고양이 꽁꽁 얼어붙은 한강 위로 고양이가 걸어다닙니다 원본"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="shorts_title">
+                              <a href="https://www.youtube.com/shorts/keex18P1z8o" target="_blank">
+                              꽁꽁 얼어붙은 한강 위로 고양이가 걸어갑니다</a></div>
+            </div>
+            <div>
+              <iframe src="https://www.youtube.com/embed/Mm-W3OETktc" title="&quot;엄마, 형아가..냥냥늉늉&quot; 서서 말하는 고양이"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="shorts_title">
+                              <a href="https://www.youtube.com/shorts/Mm-W3OETktc" target="_blank">
+                              "엄마, 형아가..냥냥늉늉" 서서 말하는 고양이</a></div>
+            </div>
+            <div>
+              <iframe src="https://www.youtube.com/embed/Jr43KNlRlww" title="뱀과 고양이의 싸움 최후의 승자는??" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="shorts_title">
+                              <a href="https://www.youtube.com/shorts/Jr43KNlRlww" target="_blank">
+                              뱀과 고양이의 싸움 최후의 승자는??</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="position_10 position_11">
+          <span class="position_10">
+            <img class="aside_naver_logo" src="images/logo/naver_logo_green.png">
+            <strong>모바일 메인</strong>&nbsp;열기
+          </span>
+          <span class="font_deco_2"> <i class="fa-solid fa-angle-right"></i> </span>
+        </div>
+      </div>
+      <!-- 슬라이드 이미지 -->
+      <span class="aside_bottom">
+        <div class="slide_banner">
+          <div class="slide_img fade">
+            <img src="images/aside_img/aside_bottom1.png" class="slideshow-image">
+          </div>
+          <div class="slide_img fade">
+            <img src="images/aside_img/aside_bottom2.jpg" class="slideshow-image">
+          </div>
+          <div class="slide_img fade">
+            <img src="images/aside_img/aside_bottom3.jpg" class="slideshow-image">
+          </div>
+        </div>
+      </span>
+    </aside>
+  </div>
+</div>
+<!-- 위로가기 버튼 -->
+<div class="top_btn_position">
+ <button onclick="goToTop()" id="go_to_top" class="top_btn">
+   <i class="fa-solid fa-caret-up"></i></button>
+</div>
+<!-- 푸터 시작 -->
+<footer>
+  <div class="footer_position">
+    <!-- 해피빈 등의 참여가 필요한 광고들?-->
+    <div class="nbanner_area">
+      <div>
+        <a href="https://happybean.naver.com/donations/H000000195001" target="_blank">
+          <div><img src="images/footer_img/happybean1.png"></div>
+          <div>
+            <div class="footer_deco">네이버 해피빈</div>
+            <div class="font_deco_5">사단법인 팅커벨프로젝트</div>
+            <div class="font_deco_4">순직한 소방관이 남긴 두 고양이를 돌보는 입양센터</div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="https://happybean.naver.com/donations/H000000195783" target="_blank">
+          <div><img src="images/footer_img/happybean2.jpeg"></div>
+          <div>
+            <div class="footer_deco">네이버 해피빈</div>
+            <div class="font_deco_5">한국고양이보호협회</div>
+            <div class="font_deco_4">무더위 협회 환묘와 노묘 응원해주세요.</div>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a href="https://pawinhand.kr/" target="_blank">
+          <div><img src="images/footer_img/pawinhand.png"></div>
+          <div>
+            <div class="footer_deco">포인핸드</div>
+            <div class="font_deco_5">포인핸드</div>
+            <div class="font_deco_4">사지 않고 입양하는 문화를 만듭니다.</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- 공지사항 -->
+    <div class="notice_area">
+      <div>
+        <a href="https://www.naver.com/NOTICE"><strong>공지사항</strong></a>
+      </div>
+      <!-- 네이버 전체 서비스 모음 바로가기 -->
+      <div>
+        <a href="https://www.naver.com/more.html">
+          서비스 전체보기 <i class="fa-solid fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="footer_aside_area" style="display: flex">
+      <div>
+        <!-- 파트너 파트, 네이버랑 협업하는 사람들에게 도움이 되는 사이트 바로가기 모음 -->
+        <div class="partner_box">
+          <h4>Partners</h4>
+          <a href="https://www.navercorp.com/esg/projectFlower" target="_blank">프로젝트의 꽃</a>
+          <a href="https://business.naver.com/service.html" target="_blank">네이버 비즈니스</a>
+          <a href="https://bizschool.naver.com/" target="_blank">네이버 비즈니스 스쿨</a>
+          <a href="https://www.navercorp.com/service/serviceAD" target="_blank">네이버 광고</a>
+          <a href="https://sell.smartstore.naver.com/#/home/about" target="_blank">스토어 개설</a>
+          <a href="https://smartplace.naver.com/" target="_blank">지역업체 등록</a>
+          <a href="https://expert.naver.com/expert/introduction?tab=guide#join" target="_blank">엑스퍼트 등록</a>
+        </div>
+        <!-- 개발자 파트, 개발 관련 네이버 사이트들 바로가기 모음 -->
+        <div class="partner_box">
+          <h4>Developers</h4>
+          <a href="https://developers.naver.com/main/" target="_blank">네이버 개발자 센터</a>
+          <a href="https://developers.naver.com/docs/common/openapiguide/#/apilist.md" target="_blank">오픈 API</a>
+          <a href="https://naver.github.io/" target="_blank">오픈 소스</a>
+          <a href="https://d2.naver.com/home" target="_blank">네이버 D2</a>
+          <a href="http://d2startup.com/" target="_blank">네이버 D2SF</a>
+          <a href="https://www.naverlabs.com/" target="_blank">네이버 랩스</a>
+        </div>
+      </div>
+      <!-- 기타 네이버에서 제공하는 서비스들 바로가기 -->
+      <div class="service_position">
+        <div class="position_1">
+          <div class="service_items">
+            <strong>웨일 브라우저</strong>
+            <a href="https://whale.naver.com/ko/" target="_blank">이용안내</a>
+          </div>
+          <div>
+            <a href="https://whale.naver.com/ko/" target="_blank">
+              <img src="images/icon/naver_whale.svg" width="80px"></a></div>
+        </div>
+        <div class="position_1">
+          <div class="service_items">
+            <strong>기업 사이트</strong>
+            <a href="https://www.navercorp.com/" target="_blank">바로가기</a>
+          </div>
+          <div>
+            <a href="https://www.navercorp.com/" target="_blank">
+              <img src="images/icon/black_naver.png" width="80px"></a></div>
+        </div>
+      </div>
+    </div>
+    <!-- 그 외 회사 소개들과 설명들? -->
+    <div class="corp_area">
+      <div>
+        <a href="https://www.navercorp.com/" target="_blank">회사소개</a>
+        <a href="https://recruit.navercorp.com/" target="_blank">인재채용</a>
+        <a href="https://www.navercorp.com/naver/proposalInquire" target="_blank">제휴제안</a>
+        <a href="https://policy.naver.com/policy/service.html" target="_blank">이용약관</a>
+        <a href="https://policy.naver.com/policy/privacy.html" target="_blank">
+          <strong>개인정보처리방침</strong></a>
+        <a href="https://policy.naver.com/policy/youthpolicy.html" target="_blank">청소년보호정책</a>
+        <a href="https://policy.naver.com/policy/service_group.html" target="_blank">네이버 정책</a>
+        <a href="https://help.naver.com/index.help?lang=ko" target="_blank">고객 센터</a>
+      </div>
+      <address>
+        <a href="https://www.naverlabs.com/" target="_blank">&copy;NAVER Corp.</a>
+      </address>
+    </div>
+  </div>
+</footer>
+<script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide_img");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 6000);
+  }
+  function goToTop() {
+    const position =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    if (position) {
+      window.requestAnimationFrame(() => {
+        window.scrollTo(0, position - position / 10);
+        goToTop();
+      });
+    }
+  }
+</script>
+</body>
+</html>
